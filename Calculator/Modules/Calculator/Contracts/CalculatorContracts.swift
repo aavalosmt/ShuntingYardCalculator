@@ -24,6 +24,7 @@ protocol CalculatorInputInteractorProtocol: class {
     var presenter: CalculatorOutputInteractorProtocol? { get set }
     
     var getButtonsUseCase: GetButtons { get }
+    var getReversePolishNotationUseCase: GetReversePolishNotation { get }
     
     func getButtons()
 }

@@ -30,8 +30,10 @@ class CalculatorButtonFactory: CalculatorButtonFactoryProtocol {
             ButtonViewModel(type: .number(value: 2)),
             ButtonViewModel(type: .number(value: 3)),
             ButtonViewModel(type: .multiplication),
+            ButtonViewModel(type: .division),
+            ButtonViewModel(type: .openBracket),
+            ButtonViewModel(type: .closingBracket),
             ButtonViewModel(type: .operate),
-            ButtonViewModel(type: .division)
         ])
         
         return models

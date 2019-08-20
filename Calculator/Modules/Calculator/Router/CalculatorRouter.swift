@@ -16,6 +16,9 @@ class CalculatorRouter: CalculatorRouterProtocol {
         let interactor = CalculatorInteractor(
             getButtonsUseCase: GetButtonsImpl(
                 factory: CalculatorButtonFactory()
+            ),
+            getReversePolishNotationUseCase: GetReversePolishNotationImpl(
+                conversor: ShuntingYardAlgorithm()
             )
         )
         let router = CalculatorRouter()

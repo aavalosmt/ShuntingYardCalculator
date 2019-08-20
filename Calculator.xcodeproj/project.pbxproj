@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE1E6936230C69C10044C3C3 /* ExpressionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E6935230C69C10044C3C3 /* ExpressionToken.swift */; };
 		BE3CC06222FA646F005EC271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3CC06122FA646F005EC271 /* AppDelegate.swift */; };
 		BE3CC06922FA6473005EC271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3CC06822FA6473005EC271 /* Assets.xcassets */; };
 		BE3CC06C22FA6473005EC271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3CC06A22FA6473005EC271 /* LaunchScreen.storyboard */; };
@@ -22,6 +23,20 @@
 		BE3F3F4522FA961600C3CA9D /* ButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3F3F4422FA961600C3CA9D /* ButtonViewModel.swift */; };
 		BE3F3F4A22FA98AF00C3CA9D /* GetButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3F3F4922FA98AF00C3CA9D /* GetButtons.swift */; };
 		BE3F3F4C22FA98E200C3CA9D /* GetButtonsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3F3F4B22FA98E200C3CA9D /* GetButtonsImpl.swift */; };
+		BEB64A1F22FAA30F00CB841F /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB64A1E22FAA30F00CB841F /* UICollectionView.swift */; };
+		BEB64A2122FAA34C00CB841F /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB64A2022FAA34C00CB841F /* UICollectionViewCell.swift */; };
+		BEB64A2522FAA38F00CB841F /* CalculatorButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB64A2322FAA38F00CB841F /* CalculatorButtonCollectionViewCell.swift */; };
+		BEB64A2622FAA38F00CB841F /* CalculatorButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEB64A2422FAA38F00CB841F /* CalculatorButtonCollectionViewCell.xib */; };
+		BEB64A2822FAAA7700CB841F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB64A2722FAAA7700CB841F /* UIColor.swift */; };
+		BEB64A2B22FAAA9B00CB841F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB64A2A22FAAA9B00CB841F /* Colors.swift */; };
+		BEB64A2D22FAB00100CB841F /* GetReversePolishNotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB64A2C22FAB00100CB841F /* GetReversePolishNotation.swift */; };
+		BEB64A2F22FAB02500CB841F /* GetReversePolishNotationImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB64A2E22FAB02500CB841F /* GetReversePolishNotationImpl.swift */; };
+		BEB64A3222FAB05600CB841F /* ShuntingYardAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB64A3122FAB05600CB841F /* ShuntingYardAlgorithm.swift */; };
+		BEB64A3522FAB2C900CB841F /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB64A3422FAB2C900CB841F /* Stack.swift */; };
+		BEB64A3D22FAB48300CB841F /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB64A3C22FAB48300CB841F /* CalculatorTests.swift */; };
+		BEB64A4522FAB4B200CB841F /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB64A4422FAB4B200CB841F /* StackTests.swift */; };
+		BEB64A4922FAC1C800CB841F /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB64A4822FAC1C800CB841F /* Array.swift */; };
+		BEB64A4B22FAC25600CB841F /* ShuntingYardAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB64A4A22FAC25600CB841F /* ShuntingYardAlgorithmTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +47,17 @@
 			remoteGlobalIDString = BE3CC05D22FA646F005EC271;
 			remoteInfo = Calculator;
 		};
+		BEB64A3F22FAB48300CB841F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE3CC05622FA646F005EC271 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE3CC05D22FA646F005EC271;
+			remoteInfo = Calculator;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE1E6935230C69C10044C3C3 /* ExpressionToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionToken.swift; sourceTree = "<group>"; };
 		BE3CC05E22FA646F005EC271 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3CC06122FA646F005EC271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE3CC06822FA6473005EC271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +77,22 @@
 		BE3F3F4422FA961600C3CA9D /* ButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewModel.swift; sourceTree = "<group>"; };
 		BE3F3F4922FA98AF00C3CA9D /* GetButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetButtons.swift; sourceTree = "<group>"; };
 		BE3F3F4B22FA98E200C3CA9D /* GetButtonsImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetButtonsImpl.swift; sourceTree = "<group>"; };
+		BEB64A1E22FAA30F00CB841F /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		BEB64A2022FAA34C00CB841F /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
+		BEB64A2322FAA38F00CB841F /* CalculatorButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		BEB64A2422FAA38F00CB841F /* CalculatorButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorButtonCollectionViewCell.xib; sourceTree = "<group>"; };
+		BEB64A2722FAAA7700CB841F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		BEB64A2A22FAAA9B00CB841F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		BEB64A2C22FAB00100CB841F /* GetReversePolishNotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReversePolishNotation.swift; sourceTree = "<group>"; };
+		BEB64A2E22FAB02500CB841F /* GetReversePolishNotationImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReversePolishNotationImpl.swift; sourceTree = "<group>"; };
+		BEB64A3122FAB05600CB841F /* ShuntingYardAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuntingYardAlgorithm.swift; sourceTree = "<group>"; };
+		BEB64A3422FAB2C900CB841F /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		BEB64A3A22FAB48300CB841F /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB64A3C22FAB48300CB841F /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
+		BEB64A3E22FAB48300CB841F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB64A4422FAB4B200CB841F /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		BEB64A4822FAC1C800CB841F /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		BEB64A4A22FAC25600CB841F /* ShuntingYardAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuntingYardAlgorithmTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +110,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BEB64A3722FAB48300CB841F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				BE3CC06022FA646F005EC271 /* Calculator */,
+				BEB64A3B22FAB48300CB841F /* CalculatorTests */,
 				BE3CC07522FA6473005EC271 /* CalculatorUITests */,
 				BE3CC05F22FA646F005EC271 /* Products */,
 			);
@@ -88,6 +135,7 @@
 			children = (
 				BE3CC05E22FA646F005EC271 /* Calculator.app */,
 				BE3CC07222FA6473005EC271 /* CalculatorUITests.xctest */,
+				BEB64A3A22FAB48300CB841F /* CalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +180,9 @@
 		BE3CC08322FA64B8005EC271 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BEB64A3322FAB2C000CB841F /* Utils */,
+				BEB64A2922FAAA9100CB841F /* Colors */,
+				BEB64A1D22FAA30000CB841F /* Extensions */,
 				BE3CC08E22FA66CB005EC271 /* Router */,
 				BE3CC08422FA64BE005EC271 /* Assets */,
 			);
@@ -191,6 +242,7 @@
 		BE3CC13922FA9492005EC271 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BEB64A2222FAA37A00CB841F /* Cells */,
 				BE3CC13F22FA94CD005EC271 /* CalculatorViewController.swift */,
 				BE3CC14122FA94CD005EC271 /* CalculatorViewController.xib */,
 			);
@@ -237,6 +289,7 @@
 		BE3F3F4622FA988E00C3CA9D /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				BEB64A3022FAB04900CB841F /* Utils */,
 				BE3F3F4722FA989700C3CA9D /* Protocols */,
 				BE3F3F4822FA989C00C3CA9D /* Implementations */,
 			);
@@ -247,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				BE3F3F4922FA98AF00C3CA9D /* GetButtons.swift */,
+				BEB64A2C22FAB00100CB841F /* GetReversePolishNotation.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -255,8 +309,65 @@
 			isa = PBXGroup;
 			children = (
 				BE3F3F4B22FA98E200C3CA9D /* GetButtonsImpl.swift */,
+				BEB64A2E22FAB02500CB841F /* GetReversePolishNotationImpl.swift */,
 			);
 			path = Implementations;
+			sourceTree = "<group>";
+		};
+		BEB64A1D22FAA30000CB841F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BEB64A1E22FAA30F00CB841F /* UICollectionView.swift */,
+				BEB64A2022FAA34C00CB841F /* UICollectionViewCell.swift */,
+				BEB64A2722FAAA7700CB841F /* UIColor.swift */,
+				BEB64A4822FAC1C800CB841F /* Array.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BEB64A2222FAA37A00CB841F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BEB64A2322FAA38F00CB841F /* CalculatorButtonCollectionViewCell.swift */,
+				BEB64A2422FAA38F00CB841F /* CalculatorButtonCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BEB64A2922FAAA9100CB841F /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				BEB64A2A22FAAA9B00CB841F /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		BEB64A3022FAB04900CB841F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BEB64A3122FAB05600CB841F /* ShuntingYardAlgorithm.swift */,
+				BE1E6935230C69C10044C3C3 /* ExpressionToken.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BEB64A3322FAB2C000CB841F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BEB64A3422FAB2C900CB841F /* Stack.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BEB64A3B22FAB48300CB841F /* CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEB64A3C22FAB48300CB841F /* CalculatorTests.swift */,
+				BEB64A3E22FAB48300CB841F /* Info.plist */,
+				BEB64A4422FAB4B200CB841F /* StackTests.swift */,
+				BEB64A4A22FAC25600CB841F /* ShuntingYardAlgorithmTests.swift */,
+			);
+			path = CalculatorTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,13 +408,31 @@
 			productReference = BE3CC07222FA6473005EC271 /* CalculatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BEB64A3922FAB48300CB841F /* CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEB64A4122FAB48300CB841F /* Build configuration list for PBXNativeTarget "CalculatorTests" */;
+			buildPhases = (
+				BEB64A3622FAB48300CB841F /* Sources */,
+				BEB64A3722FAB48300CB841F /* Frameworks */,
+				BEB64A3822FAB48300CB841F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEB64A4022FAB48300CB841F /* PBXTargetDependency */,
+			);
+			name = CalculatorTests;
+			productName = CalculatorTests;
+			productReference = BEB64A3A22FAB48300CB841F /* CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BE3CC05622FA646F005EC271 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = aavalosmt;
 				TargetAttributes = {
@@ -312,6 +441,10 @@
 					};
 					BE3CC07122FA6473005EC271 = {
 						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BE3CC05D22FA646F005EC271;
+					};
+					BEB64A3922FAB48300CB841F = {
+						CreatedOnToolsVersion = 10.0;
 						TestTargetID = BE3CC05D22FA646F005EC271;
 					};
 				};
@@ -331,6 +464,7 @@
 			targets = (
 				BE3CC05D22FA646F005EC271 /* Calculator */,
 				BE3CC07122FA6473005EC271 /* CalculatorUITests */,
+				BEB64A3922FAB48300CB841F /* CalculatorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -340,6 +474,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB64A2622FAA38F00CB841F /* CalculatorButtonCollectionViewCell.xib in Resources */,
 				BE3CC06C22FA6473005EC271 /* LaunchScreen.storyboard in Resources */,
 				BE3CC14722FA94CD005EC271 /* CalculatorViewController.xib in Resources */,
 				BE3CC06922FA6473005EC271 /* Assets.xcassets in Resources */,
@@ -347,6 +482,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BE3CC07022FA6473005EC271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB64A3822FAB48300CB841F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,15 +504,26 @@
 			files = (
 				BE3CC14622FA94CD005EC271 /* CalculatorInteractor.swift in Sources */,
 				BE3CC14322FA94CD005EC271 /* CalculatorRouter.swift in Sources */,
+				BEB64A3222FAB05600CB841F /* ShuntingYardAlgorithm.swift in Sources */,
+				BEB64A2522FAA38F00CB841F /* CalculatorButtonCollectionViewCell.swift in Sources */,
 				BE3F3F4A22FA98AF00C3CA9D /* GetButtons.swift in Sources */,
+				BEB64A2822FAAA7700CB841F /* UIColor.swift in Sources */,
 				BE3CC14222FA94CD005EC271 /* CalculatorPresenter.swift in Sources */,
 				BE3F3F4C22FA98E200C3CA9D /* GetButtonsImpl.swift in Sources */,
 				BE3CC09022FA66D3005EC271 /* Router.swift in Sources */,
+				BEB64A2122FAA34C00CB841F /* UICollectionViewCell.swift in Sources */,
+				BEB64A2B22FAAA9B00CB841F /* Colors.swift in Sources */,
+				BEB64A1F22FAA30F00CB841F /* UICollectionView.swift in Sources */,
 				BE3CC06222FA646F005EC271 /* AppDelegate.swift in Sources */,
+				BE1E6936230C69C10044C3C3 /* ExpressionToken.swift in Sources */,
 				BE3CC14522FA94CD005EC271 /* CalculatorViewController.swift in Sources */,
 				BE3F3F4522FA961600C3CA9D /* ButtonViewModel.swift in Sources */,
+				BEB64A2F22FAB02500CB841F /* GetReversePolishNotationImpl.swift in Sources */,
+				BEB64A4922FAC1C800CB841F /* Array.swift in Sources */,
+				BEB64A3522FAB2C900CB841F /* Stack.swift in Sources */,
 				BE3F3F4222FA960400C3CA9D /* CalculatorButtonFactory.swift in Sources */,
 				BE3CC14422FA94CD005EC271 /* CalculatorContracts.swift in Sources */,
+				BEB64A2D22FAB00100CB841F /* GetReversePolishNotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +535,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BEB64A3622FAB48300CB841F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB64A4522FAB4B200CB841F /* StackTests.swift in Sources */,
+				BEB64A4B22FAC25600CB841F /* ShuntingYardAlgorithmTests.swift in Sources */,
+				BEB64A3D22FAB48300CB841F /* CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -389,6 +552,11 @@
 			isa = PBXTargetDependency;
 			target = BE3CC05D22FA646F005EC271 /* Calculator */;
 			targetProxy = BE3CC07322FA6473005EC271 /* PBXContainerItemProxy */;
+		};
+		BEB64A4022FAB48300CB841F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE3CC05D22FA646F005EC271 /* Calculator */;
+			targetProxy = BEB64A3F22FAB48300CB841F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -596,6 +764,44 @@
 			};
 			name = Release;
 		};
+		BEB64A4222FAB48300CB841F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.aavalosmt.CalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
+			};
+			name = Debug;
+		};
+		BEB64A4322FAB48300CB841F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.aavalosmt.CalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -622,6 +828,15 @@
 			buildConfigurations = (
 				BE3CC07F22FA6473005EC271 /* Debug */,
 				BE3CC08022FA6473005EC271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEB64A4122FAB48300CB841F /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEB64A4222FAB48300CB841F /* Debug */,
+				BEB64A4322FAB48300CB841F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

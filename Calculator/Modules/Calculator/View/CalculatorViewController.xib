@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalculatorViewController" customModule="Calculator" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="LIF-eD-ZUS" id="Fu0-wf-PeA"/>
+                <outlet property="resultLabel" destination="M1S-wT-oW5" id="ISx-hB-TP1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,19 +20,33 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1S-wT-oW5">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1S-wT-oW5">
                     <rect key="frame" x="20" y="0.0" width="335" height="111"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="LIF-eD-ZUS">
+                    <rect key="frame" x="0.0" y="111" width="375" height="556"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CJO-Du-bC3">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="LIF-eD-ZUS" secondAttribute="bottom" id="MSj-TM-bRL"/>
                 <constraint firstItem="M1S-wT-oW5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="N5z-uP-6lf"/>
                 <constraint firstItem="M1S-wT-oW5" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1/6" id="g0y-Am-3bf"/>
                 <constraint firstAttribute="trailing" secondItem="M1S-wT-oW5" secondAttribute="trailing" constant="20" id="llK-zA-Ren"/>
                 <constraint firstItem="M1S-wT-oW5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="o4Q-qq-SeZ"/>
+                <constraint firstItem="LIF-eD-ZUS" firstAttribute="top" secondItem="M1S-wT-oW5" secondAttribute="bottom" id="odZ-Em-STu"/>
+                <constraint firstAttribute="trailing" secondItem="LIF-eD-ZUS" secondAttribute="trailing" id="quR-0I-1tb"/>
+                <constraint firstItem="LIF-eD-ZUS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tPB-5x-imj"/>
             </constraints>
         </view>
     </objects>

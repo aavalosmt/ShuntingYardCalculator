@@ -14,15 +14,19 @@ enum ButtonInteractionType {
     case multiplication
     case division
     case operate
+    case openBracket
+    case closingBracket
     case number(value: Int)
     
     var label: String {
         switch self {
         case .addition: return "+"
         case .substraction: return "-"
-        case .multiplication: return "x"
+        case .multiplication: return "*"
         case .division: return "/"
         case .operate: return "="
+        case .openBracket: return "("
+        case .closingBracket: return ")"
         case .number(let value): return String(value)
         }
     }

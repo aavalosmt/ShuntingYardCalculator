@@ -13,9 +13,12 @@ class CalculatorInteractor: CalculatorInputInteractorProtocol {
     weak var presenter: CalculatorOutputInteractorProtocol?
     
     let getButtonsUseCase: GetButtons
+    let getReversePolishNotationUseCase: GetReversePolishNotation
     
-    init(getButtonsUseCase: GetButtons) {
+    init(getButtonsUseCase: GetButtons,
+         getReversePolishNotationUseCase: GetReversePolishNotation) {
         self.getButtonsUseCase = getButtonsUseCase
+        self.getReversePolishNotationUseCase = getReversePolishNotationUseCase
     }
     
     func getButtons() {
