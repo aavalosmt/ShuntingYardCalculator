@@ -26,6 +26,10 @@ class CalculatorPresenter: CalculatorPresenterProtocol {
         interactor.getButtons()
     }
     
+    func evaluateOperation(expression: String) {
+        interactor.evaluateOperation(expression: expression)
+    }
+    
 }
 
 // MARK: - CalculatorOututInteractorProtocol
@@ -36,4 +40,11 @@ extension CalculatorPresenter: CalculatorOutputInteractorProtocol {
         view?.showButtons(buttons: buttons)
     }
     
+    func didEvaluateOperation(result: Double) {
+        view?.showResult(result: result)
+    }
+    
+    func didFailedToEvaluateOperation() {
+        
+    }
 }

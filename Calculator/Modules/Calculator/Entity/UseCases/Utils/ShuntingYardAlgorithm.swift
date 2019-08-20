@@ -12,7 +12,7 @@ class ShuntingYardAlgorithm: PostFixExpressionConversor {
     
     private let operators = "+-/*^"
     private let parenthesis = "()"
-    private let operands = "1234567890"
+    private let operands = "1234567890."
     
     private lazy var stack: Stack<ExpressionToken> = Stack()
     private lazy var postFixStack: Stack<ExpressionToken> = Stack()
@@ -117,17 +117,17 @@ class ShuntingYardAlgorithm: PostFixExpressionConversor {
     }
     
     private func readOperand(expression: inout String) -> String? {
-        var operand: String = ""
+        var operand: String?
         
         for character in expression {
             if isOperand(token: character) {
-                operand += String(character)
+                operand = operand == nil ? String(character) : (operand ?? "") + String(character)
                 expression.removeFirst()
             } else {
                 return operand
             }
         }
-        return nil
+        return operand
     }
     
     private func readOperator(expression: inout String) -> Operator? {

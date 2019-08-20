@@ -12,6 +12,7 @@ protocol CalculatorViewProtocol: class {
     var presenter: CalculatorPresenterProtocol? { get set }
     
     func showButtons(buttons: [ButtonViewModelProtocol])
+    func showResult(result: Double)
 }
 
 class CalculatorViewController: UIViewController {
@@ -52,6 +53,9 @@ extension CalculatorViewController: CalculatorViewProtocol {
         }
     }
 
+    func showResult(result: Double) {
+        resultLabel.text = String(result)
+    }
 }
 
 // MARK: - UICollectionViewDelegate, UICollectionViewDataSource
@@ -83,7 +87,7 @@ extension CalculatorViewController: UICollectionViewDelegate, UICollectionViewDa
         
         switch buttonModel.type {
         case .operate:
-            break
+            presenter?.evaluateOperation(expression: currentText)
         default:
             resultLabel.text = currentText + buttonModel.type.label
         }

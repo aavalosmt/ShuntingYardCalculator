@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BE1E6936230C69C10044C3C3 /* ExpressionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E6935230C69C10044C3C3 /* ExpressionToken.swift */; };
+		BE1E6938230C801A0044C3C3 /* EvaluatePostfixExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E6937230C801A0044C3C3 /* EvaluatePostfixExpression.swift */; };
+		BE1E693A230C80270044C3C3 /* EvaluatePostfixExpressionImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E6939230C80270044C3C3 /* EvaluatePostfixExpressionImpl.swift */; };
+		BE1E693C230C80A20044C3C3 /* PostfixExpressionEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E693B230C80A20044C3C3 /* PostfixExpressionEvaluator.swift */; };
+		BE1E693E230C80E90044C3C3 /* PostfixExpressionEvaluatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E693D230C80E90044C3C3 /* PostfixExpressionEvaluatorImpl.swift */; };
 		BE3CC06222FA646F005EC271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3CC06122FA646F005EC271 /* AppDelegate.swift */; };
 		BE3CC06922FA6473005EC271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE3CC06822FA6473005EC271 /* Assets.xcassets */; };
 		BE3CC06C22FA6473005EC271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE3CC06A22FA6473005EC271 /* LaunchScreen.storyboard */; };
@@ -58,6 +62,10 @@
 
 /* Begin PBXFileReference section */
 		BE1E6935230C69C10044C3C3 /* ExpressionToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionToken.swift; sourceTree = "<group>"; };
+		BE1E6937230C801A0044C3C3 /* EvaluatePostfixExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluatePostfixExpression.swift; sourceTree = "<group>"; };
+		BE1E6939230C80270044C3C3 /* EvaluatePostfixExpressionImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluatePostfixExpressionImpl.swift; sourceTree = "<group>"; };
+		BE1E693B230C80A20044C3C3 /* PostfixExpressionEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostfixExpressionEvaluator.swift; sourceTree = "<group>"; };
+		BE1E693D230C80E90044C3C3 /* PostfixExpressionEvaluatorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostfixExpressionEvaluatorImpl.swift; sourceTree = "<group>"; };
 		BE3CC05E22FA646F005EC271 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE3CC06122FA646F005EC271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE3CC06822FA6473005EC271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -301,6 +309,8 @@
 			children = (
 				BE3F3F4922FA98AF00C3CA9D /* GetButtons.swift */,
 				BEB64A2C22FAB00100CB841F /* GetReversePolishNotation.swift */,
+				BE1E6937230C801A0044C3C3 /* EvaluatePostfixExpression.swift */,
+				BE1E693B230C80A20044C3C3 /* PostfixExpressionEvaluator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -310,6 +320,8 @@
 			children = (
 				BE3F3F4B22FA98E200C3CA9D /* GetButtonsImpl.swift */,
 				BEB64A2E22FAB02500CB841F /* GetReversePolishNotationImpl.swift */,
+				BE1E6939230C80270044C3C3 /* EvaluatePostfixExpressionImpl.swift */,
+				BE1E693D230C80E90044C3C3 /* PostfixExpressionEvaluatorImpl.swift */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -506,7 +518,9 @@
 				BE3CC14322FA94CD005EC271 /* CalculatorRouter.swift in Sources */,
 				BEB64A3222FAB05600CB841F /* ShuntingYardAlgorithm.swift in Sources */,
 				BEB64A2522FAA38F00CB841F /* CalculatorButtonCollectionViewCell.swift in Sources */,
+				BE1E693A230C80270044C3C3 /* EvaluatePostfixExpressionImpl.swift in Sources */,
 				BE3F3F4A22FA98AF00C3CA9D /* GetButtons.swift in Sources */,
+				BE1E693C230C80A20044C3C3 /* PostfixExpressionEvaluator.swift in Sources */,
 				BEB64A2822FAAA7700CB841F /* UIColor.swift in Sources */,
 				BE3CC14222FA94CD005EC271 /* CalculatorPresenter.swift in Sources */,
 				BE3F3F4C22FA98E200C3CA9D /* GetButtonsImpl.swift in Sources */,
@@ -520,8 +534,10 @@
 				BE3F3F4522FA961600C3CA9D /* ButtonViewModel.swift in Sources */,
 				BEB64A2F22FAB02500CB841F /* GetReversePolishNotationImpl.swift in Sources */,
 				BEB64A4922FAC1C800CB841F /* Array.swift in Sources */,
+				BE1E6938230C801A0044C3C3 /* EvaluatePostfixExpression.swift in Sources */,
 				BEB64A3522FAB2C900CB841F /* Stack.swift in Sources */,
 				BE3F3F4222FA960400C3CA9D /* CalculatorButtonFactory.swift in Sources */,
+				BE1E693E230C80E90044C3C3 /* PostfixExpressionEvaluatorImpl.swift in Sources */,
 				BE3CC14422FA94CD005EC271 /* CalculatorContracts.swift in Sources */,
 				BEB64A2D22FAB00100CB841F /* GetReversePolishNotation.swift in Sources */,
 			);

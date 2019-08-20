@@ -34,6 +34,16 @@ enum Operator: String {
         case .exponent: return 10
         }
     }
+    
+    func operate(lhs: Double, rhs: Double) -> Double {
+        switch self {
+        case .addition: return lhs + rhs
+        case .substraction: return lhs - rhs
+        case .multiplication: return lhs * rhs
+        case .division: return lhs / rhs
+        case .exponent: return pow(lhs, rhs)
+        }
+    }
 }
 
 enum Parenthesis: String {

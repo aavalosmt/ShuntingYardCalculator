@@ -19,8 +19,12 @@ class CalculatorRouter: CalculatorRouterProtocol {
             ),
             getReversePolishNotationUseCase: GetReversePolishNotationImpl(
                 conversor: ShuntingYardAlgorithm()
+            ),
+            evaluatePostfixExpressionUsecase: EvaluatePostfixExpressionImpl(
+                evaluator: PostfixExpressionEvaluatorImpl()
             )
         )
+        
         let router = CalculatorRouter()
         
         let presenter = CalculatorPresenter(

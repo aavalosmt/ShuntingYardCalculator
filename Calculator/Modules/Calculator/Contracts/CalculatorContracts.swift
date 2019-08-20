@@ -18,6 +18,7 @@ protocol CalculatorPresenterProtocol: class {
     var router: CalculatorRouterProtocol { get }
     
     func viewDidLoad()
+    func evaluateOperation(expression: String)
 }
 
 protocol CalculatorInputInteractorProtocol: class {
@@ -27,6 +28,7 @@ protocol CalculatorInputInteractorProtocol: class {
     var getReversePolishNotationUseCase: GetReversePolishNotation { get }
     
     func getButtons()
+    func evaluateOperation(expression: String)
 }
 
 protocol CalculatorOutputInteractorProtocol: class {
@@ -34,4 +36,7 @@ protocol CalculatorOutputInteractorProtocol: class {
     var view: CalculatorViewProtocol? { get }
     
     func didFetchButtons(buttons: [ButtonViewModelProtocol])
+    
+    func didEvaluateOperation(result: Double)
+    func didFailedToEvaluateOperation()
 }
